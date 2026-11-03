@@ -1,5 +1,5 @@
+
 User-agent: *
 Allow: /
 
-# Muhammad Sohail — Frontend Developer portfolio
-# Hash-based routes (/#/about) are not separately crawled; the home page links to every section.
+Sitemap: https://muhammad-sohail-portfolio-009.netlify.app/sitemap.xml
