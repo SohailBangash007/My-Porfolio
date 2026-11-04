@@ -9,10 +9,12 @@ import {
   FiTerminal,
   FiCheckCircle,
 } from 'react-icons/fi'
+import { SiJavascript, SiReact, SiTailwindcss } from 'react-icons/si'
 import { profile, stats } from '../../data/portfolio'
 import useTypewriter from '../../hooks/useTypewriter'
 import SocialLinks from '../ui/SocialLinks'
 import TiltCard from '../ui/TiltCard'
+import Magnetic from '../ui/Magnetic'
 
 const ease = [0.22, 1, 0.36, 1]
 
@@ -28,7 +30,7 @@ const item = {
 
 function ProfilePhoto() {
   return (
-    <div className="relative mx-auto w-full max-w-[420px] lg:max-w-none">
+    <div className="photo-aura relative isolate mx-auto w-full max-w-[420px] lg:max-w-none">
       {/* decorative rings */}
       <div className="pointer-events-none absolute -inset-6 rounded-[2.6rem] border border-line/10" />
       <div className="pointer-events-none absolute -inset-12 hidden rounded-[3rem] border border-dashed border-line/10 sm:block" />
@@ -109,6 +111,28 @@ function ProfilePhoto() {
             <FiCheckCircle className="h-2.5 w-2.5 text-emerald-400" /> Current · 1+ month
           </p>
         </motion.div>
+
+        {/* floating tech badges */}
+        {[
+          { icon: SiReact, label: 'React', color: '#61dafb', className: '-left-4 top-[26%]', delay: 0.2, duration: 5.4 },
+          { icon: SiTailwindcss, label: 'Tailwind', color: '#38bdf8', className: '-right-4 top-[45%]', delay: 1.1, duration: 6.2 },
+          { icon: SiJavascript, label: 'JavaScript', color: '#f7df1e', className: '-right-3 bottom-[25%]', delay: 0.7, duration: 5.8 },
+        ].map((badge) => (
+          <motion.div
+            key={badge.label}
+            animate={{ y: [0, -9, 0], rotate: [0, 1.5, 0] }}
+            transition={{
+              duration: badge.duration,
+              repeat: Infinity,
+              ease: 'easeInOut',
+              delay: badge.delay,
+            }}
+            className={`glass absolute z-20 hidden items-center gap-1.5 rounded-full px-2.5 py-1.5 text-[10px] font-medium shadow-card sm:flex ${badge.className}`}
+          >
+            <badge.icon aria-hidden className="h-3 w-3" style={{ color: badge.color }} />
+            {badge.label}
+          </motion.div>
+        ))}
       </TiltCard>
     </div>
   )
@@ -145,7 +169,7 @@ export default function Hero() {
             >
               Frontend
               <br className="hidden sm:block" />{' '}
-              <span className="text-gradient">Developer</span>
+              <span className="text-gradient text-shimmer text-glow">Developer</span>
               <span className="text-accent">.</span>
             </motion.h1>
 
@@ -169,14 +193,18 @@ export default function Hero() {
             </motion.p>
 
             <motion.div variants={item} className="mt-8 flex flex-wrap items-center gap-3">
-              <Link to="/projects" className="btn-primary group">
-                View my work
-                <FiArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-              </Link>
-              <Link to="/resume" className="btn-ghost group">
-                <FiDownload className="h-4 w-4 transition-transform group-hover:translate-y-0.5" />
-                Download CV
-              </Link>
+              <Magnetic>
+                <Link to="/projects" className="btn-primary group">
+                  View my work
+                  <FiArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                </Link>
+              </Magnetic>
+              <Magnetic strength={0.14}>
+                <Link to="/resume" className="btn-ghost group">
+                  <FiDownload className="h-4 w-4 transition-transform group-hover:translate-y-0.5" />
+                  Download CV
+                </Link>
+              </Magnetic>
               <SocialLinks className="ml-1 hidden sm:flex" />
             </motion.div>
 

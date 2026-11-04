@@ -46,7 +46,7 @@ export default function FeaturedProjects() {
             <div>
               <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-muted">More in the archive</p>
               <p className="mt-1.5 font-display text-lg font-semibold">
-                Weather dashboards, quiz apps, maps and more
+                Landing pages, ERP dashboards and more
               </p>
             </div>
             <span className="btn-ghost !py-2.5 text-[13px]">

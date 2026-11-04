@@ -1,8 +1,14 @@
 import { motion, useScroll, useTransform } from 'framer-motion'
-import { FiGithub, FiLinkedin, FiInstagram, FiTwitter } from 'react-icons/fi'
+import { FiGithub, FiLinkedin, FiInstagram, FiTwitter, FiMail } from 'react-icons/fi'
 import { profile } from '../data/portfolio'
 
-const icons = { github: FiGithub, linkedin: FiLinkedin, instagram: FiInstagram, twitter: FiTwitter }
+const icons = {
+  github: FiGithub,
+  linkedin: FiLinkedin,
+  instagram: FiInstagram,
+  twitter: FiTwitter,
+  mail: FiMail,
+}
 
 export default function SocialRail() {
   const { scrollYProgress } = useScroll()

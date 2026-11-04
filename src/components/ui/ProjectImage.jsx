@@ -1,8 +1,17 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
-/** Image that gracefully falls back to a gradient if the network image fails. */
+/** Image that fades in over a gradient placeholder, with a graceful fallback. */
 export default function ProjectImage({ src, alt, fallback = ['#0e7490', '#4c1d95'], title = '', className = '' }) {
+  const imgRef = useRef(null)
   const [failed, setFailed] = useState(false)
+  const [loaded, setLoaded] = useState(false)
+
+  // Cached images can finish before React attaches onLoad.
+  useEffect(() => {
+    setLoaded(false)
+    setFailed(false)
+    if (imgRef.current?.complete && imgRef.current.naturalWidth > 0) setLoaded(true)
+  }, [src])
 
   return (
     <div className={`relative h-full w-full overflow-hidden ${className}`}>
@@ -17,11 +26,15 @@ export default function ProjectImage({ src, alt, fallback = ['#0e7490', '#4c1d95
 
       {!failed && (
         <img
+          ref={imgRef}
           src={src}
           alt={alt}
           loading="lazy"
+          onLoad={() => setLoaded(true)}
           onError={() => setFailed(true)}
-          className="relative h-full w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.06]"
+          className={`relative h-full w-full object-cover transition-all duration-[1200ms] ease-out group-hover:scale-[1.06] ${
+            loaded ? 'scale-100 opacity-100 blur-0' : 'scale-105 opacity-0 blur-md'
+          }`}
         />
       )}
     </div>

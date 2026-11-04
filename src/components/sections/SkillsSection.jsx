@@ -54,7 +54,7 @@ export default function SkillsSection() {
                               whileInView={{ width: `${skill.level}%` }}
                               viewport={{ once: true, amount: 0.6 }}
                               transition={{ duration: 1.1, delay: 0.15 + si * 0.08, ease: [0.22, 1, 0.36, 1] }}
-                              className="h-full rounded-full bg-gradient-to-r from-accent via-sky-400 to-violet"
+                              className="bar-fill h-full rounded-full bg-gradient-to-r from-accent via-sky-400 to-violet"
                             />
                           </div>
                         </div>
@@ -109,14 +109,19 @@ export default function SkillsSection() {
                   </div>
 
                   <div className="mt-6 flex flex-wrap gap-2">
-                    {strengths.map((s) => (
-                      <span
+                    {strengths.map((s, i) => (
+                      <motion.span
                         key={s}
+                        initial={{ opacity: 0, y: 10, scale: 0.96 }}
+                        whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                        viewport={{ once: true, amount: 0.4 }}
+                        transition={{ duration: 0.4, delay: i * 0.035, ease: [0.22, 1, 0.36, 1] }}
+                        whileHover={{ y: -2 }}
                         className="inline-flex items-center gap-1.5 rounded-full border border-line/10 bg-surface2/70 px-3.5 py-2 text-[12.5px] text-muted transition-colors hover:border-accent/30 hover:text-ink"
                       >
                         <FiCheck className="h-3 w-3 text-accent" />
                         {s}
-                      </span>
+                      </motion.span>
                     ))}
                   </div>
 

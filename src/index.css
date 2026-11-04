@@ -152,6 +152,165 @@
   .noise {
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.35'/%3E%3C/svg%3E");
   }
+
+  /* Animated gradient text -------------------------------------- */
+  .text-shimmer {
+    background-image: linear-gradient(
+      100deg,
+      #22d3ee 0%,
+      #7dd3fc 18%,
+      #67e8f9 30%,
+      #a78bfa 48%,
+      #22d3ee 66%,
+      #a78bfa 88%,
+      #22d3ee 100%
+    );
+    background-size: 230% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: shimmer-text 8s ease-in-out infinite;
+  }
+
+  .text-glow {
+    text-shadow: 0 0 28px rgba(34, 211, 238, 0.28), 0 0 60px rgba(167, 139, 250, 0.18);
+  }
+
+  /* Project card spotlight -------------------------------------- */
+  .project-card {
+    --mx: 50%;
+    --my: 0%;
+  }
+
+  .spotlight-layer {
+    background: radial-gradient(
+      340px circle at var(--mx) var(--my),
+      rgba(34, 211, 238, 0.24),
+      rgba(167, 139, 250, 0.12) 38%,
+      transparent 68%
+    );
+    opacity: 0;
+    transition: opacity 0.45s ease;
+  }
+
+  .project-card:hover .spotlight-layer {
+    opacity: 1;
+  }
+
+  .sweep {
+    transform: translateX(-140%) skewX(-16deg);
+  }
+
+  .project-card:hover .sweep {
+    animation: sweep 0.95s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .project-card:hover .project-arrow {
+    transform: translate(2px, -2px);
+  }
+
+  /* Skill bar shimmer ------------------------------------------- */
+  .bar-fill {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .bar-fill::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.55), transparent);
+    transform: translateX(-100%);
+    animation: bar-shimmer 2.8s ease-in-out infinite;
+  }
+
+  /* Photo aura --------------------------------------------------- */
+  .photo-aura::before {
+    content: '';
+    position: absolute;
+    inset: -22%;
+    z-index: 0;
+    border-radius: 999px;
+    background: conic-gradient(
+      from 0deg,
+      transparent 0deg,
+      rgba(34, 211, 238, 0.4) 55deg,
+      transparent 110deg,
+      rgba(167, 139, 250, 0.4) 190deg,
+      transparent 250deg,
+      rgba(34, 211, 238, 0.32) 320deg,
+      transparent 360deg
+    );
+    filter: blur(38px);
+    animation: spin-slow 16s linear infinite;
+    pointer-events: none;
+  }
+
+  .cta-aurora {
+    background: conic-gradient(
+      from 0deg,
+      transparent 0deg,
+      rgba(34, 211, 238, 0.3) 60deg,
+      transparent 130deg,
+      rgba(167, 139, 250, 0.3) 220deg,
+      transparent 300deg,
+      rgba(34, 211, 238, 0.24) 350deg,
+      transparent 360deg
+    );
+    animation: spin-slow 18s linear infinite;
+  }
+
+  .stat-glow {
+    background: radial-gradient(260px circle at 50% 0%, rgba(34, 211, 238, 0.16), transparent 70%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+
+  .stat-cell:hover .stat-glow {
+    opacity: 1;
+  }
+}
+
+@keyframes shimmer-text {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes sweep {
+  0% {
+    transform: translateX(-140%) skewX(-16deg);
+    opacity: 0;
+  }
+  35% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateX(240%) skewX(-16deg);
+    opacity: 0;
+  }
+}
+
+@keyframes bar-shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  55%,
+  100% {
+    transform: translateX(220%);
+  }
+}
+
+@keyframes spin-slow {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @layer utilities {

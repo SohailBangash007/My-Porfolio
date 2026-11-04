@@ -15,7 +15,10 @@ export default function SectionHeading({
       {eyebrow && (
         <Reveal>
           <span className="eyebrow">
-            <span className="h-1.5 w-1.5 rounded-full bg-accent shadow-[0_0_10px_2px_rgba(34,211,238,0.7)]" />
+            <span className="relative flex h-1.5 w-1.5">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-60" />
+              <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-accent shadow-[0_0_10px_2px_rgba(34,211,238,0.7)]" />
+            </span>
             {eyebrow}
           </span>
         </Reveal>
@@ -23,7 +26,7 @@ export default function SectionHeading({
 
       <Reveal delay={0.06}>
         <h2 className="mt-5 text-3xl font-semibold leading-[1.12] sm:text-4xl lg:text-[2.85rem]">
-          {title} {highlight && <span className="text-gradient">{highlight}</span>}
+          {title} {highlight && <span className="text-gradient text-shimmer">{highlight}</span>}
         </h2>
       </Reveal>
 

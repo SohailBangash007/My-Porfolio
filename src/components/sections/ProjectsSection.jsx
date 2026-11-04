@@ -24,6 +24,7 @@ export default function ProjectsSection() {
   return (
     <section className="section pt-6">
       <div className="container-x">
+        <h2 className="sr-only">All projects</h2>
         <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
           <div className="flex flex-wrap gap-2">
             {categories.map((c) => (
@@ -95,14 +96,14 @@ export default function ProjectsSection() {
           <div className="mt-10 rounded-2xl border border-line/10 bg-surface/40 p-5 text-center text-[13px] text-muted">
             More experiments live on my{' '}
             <a
-              href="https://github.com/"
+              href="https://github.com/SohailBangash007"
               target="_blank"
               rel="noreferrer"
               className="font-medium text-accent underline-offset-4 hover:underline"
             >
               GitHub
             </a>
-            . Each project above is built from scratch — no templates.
+            . These are real projects I have built and shipped — a couple of the client repositories are private.
           </div>
         </Reveal>
       </div>

@@ -1,5 +1,13 @@
 import { motion } from 'framer-motion'
 
+const particles = Array.from({ length: 18 }, (_, i) => ({
+  left: `${(i * 37 + 11) % 97}%`,
+  top: `${(i * 53 + 7) % 92}%`,
+  size: (i % 3) + 2,
+  duration: 8 + (i % 7) * 1.6,
+  delay: (i % 9) * 0.9,
+}))
+
 export default function Background({ grid = true, blobs = true }) {
   return (
     <div aria-hidden className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
@@ -28,6 +36,23 @@ export default function Background({ grid = true, blobs = true }) {
           />
         </>
       )}
+
+      {particles.map((p, i) => (
+        <span
+          key={i}
+          aria-hidden
+          className="absolute animate-rise rounded-full bg-accent/30"
+          style={{
+            left: p.left,
+            top: p.top,
+            width: p.size,
+            height: p.size,
+            animationDuration: `${p.duration}s`,
+            animationDelay: `${p.delay}s`,
+            boxShadow: '0 0 8px 1px rgba(34,211,238,0.25)',
+          }}
+        />
+      ))}
 
       <div className="noise absolute inset-0 opacity-[0.035] mix-blend-overlay" />
       <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-app to-transparent" />

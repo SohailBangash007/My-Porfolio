@@ -21,9 +21,10 @@ npm run build
 npm run preview
 ```
 
-The production files are created in `dist/`. Because the app uses `HashRouter`, you can open
-`dist/index.html` directly **or** upload the `dist` folder to any static host
-(Netlify, Vercel, GitHub Pages, cPanel, etc.).
+The production files are created in `dist/`. The app uses `BrowserRouter` with clean URLs,
+so upload the `dist` folder to a host that supports SPA redirects (Netlify, Vercel, etc.).
+This repository includes a `public/_redirects` file so every route resolves to `index.html` on
+Netlify. If you open `dist/index.html` from disk, use a local server instead of double-clicking.
 
 ---
 
@@ -40,8 +41,7 @@ The production files are created in `dist/`. Because the app uses `HashRouter`, 
 | `/contact`    | Contact form (opens email app), contact cards, FAQ               |
 | `*`           | Custom 404                                                       |
 
-> The URLs use a `#` (e.g. `/#/projects`). That is intentional so the site also works when
-> opened directly from a file or hosted in a sub-folder.
+> Routes are clean URLs (e.g. `/projects`) and are backed by `public/_redirects` on Netlify.
 
 ---
 
@@ -113,9 +113,9 @@ Replace `public/images/profile.jpg` with your own photo (keep the same file name
 
 ### Project images
 
-Projects use Unsplash URLs by default. To use your own screenshots, put them in
-`public/images/` and set e.g. `image: './images/shopsphere.jpg'`. If an image fails to load,
-`ProjectImage` automatically shows a branded gradient instead (no broken image icons).
+The real project screenshots live in `public/images/projects/` and are referenced with relative
+paths such as `./images/projects/ecommerce.png`. If an image fails to load, `ProjectImage`
+automatically shows a branded gradient instead (no broken image icons).
 
 > ⚠️ The `github` / `live` / social links are placeholders — replace them in
 > `src/data/portfolio.js` with your real profiles.
@@ -152,7 +152,7 @@ Change the accent gradient in a few places:
 - The contact form has no server. It validates locally and opens the visitor's email app via
   `mailto:`. If you later want real submissions, point it at Formspree, Getform or your own API
   inside `ContactSection.jsx`.
-- Testimonials and some project content are realistic placeholders — swap them for real ones
+- Testimonials use role-only names (team lead, project manager, instructor) — confirm quotes before publishing
   before sharing widely.
 - `npm run build` may warn about chunk size because of Framer Motion; that is expected for a
   portfolio and does not affect functionality.

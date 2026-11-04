@@ -10,7 +10,7 @@ export default function Projects() {
         title="Things I have designed and"
         highlight="built."
         crumb="Projects"
-        description="Six selected projects — from an e-commerce storefront to a map explorer inspired by my internship at Jugrafia. Filter by type or search by technology."
+        description="Five real builds — a full e-commerce store, an AI voice agent for restaurants, a hotel booking platform, a cinematic product site and a multi-module ERP. Filter by type or search by technology."
       />
       <ProjectsSection />
       <CTASection />
