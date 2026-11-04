@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Route, Routes, useLocation } from 'react-router-dom'
@@ -23,6 +24,23 @@ import NotFound from './pages/NotFound'
 export default function App() {
   const location = useLocation()
   const [loading, setLoading] = useState(true)
+
+  // Dynamic Canonical URL for every page
+  useEffect(() => {
+    const baseUrl = 'https://muhammad-sohail-portfolio-009.netlify.app'
+    const pathname = location.pathname.replace(/\/+$/, '') || '/'
+    const canonicalUrl = `${baseUrl}${pathname === '/' ? '/' : pathname}`
+
+    let canonical = document.querySelector('link[rel="canonical"]')
+
+    if (!canonical) {
+      canonical = document.createElement('link')
+      canonical.setAttribute('rel', 'canonical')
+      document.head.appendChild(canonical)
+    }
+
+    canonical.setAttribute('href', canonicalUrl)
+  }, [location.pathname])
 
   useEffect(() => {
     const t = setTimeout(() => setLoading(false), 1700)
