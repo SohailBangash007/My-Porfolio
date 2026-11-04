@@ -1,0 +1,5 @@
+
+User-agent: *
+Allow: /
+
+Sitemap: https://muhammad-sohail-portfolio-009.netlify.app/sitemap.xml

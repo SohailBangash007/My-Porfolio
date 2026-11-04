@@ -1,10 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?>
 
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-       <loc>https://muhammad-sohail-portfolio-009.netlify.app/</loc>
-       <lastmod>2026-11-03T07:08:21+00:00</lastmod>
-       <priority>1.0000</priority>
+    <loc>https://muhammad-sohail-portfolio-009.netlify.app/</loc>
   </url>
+
+  <url>
+    <loc>https://muhammad-sohail-portfolio-009.netlify.app/about</loc>
+  </url>
+
+  <url>
+    <loc>https://muhammad-sohail-portfolio-009.netlify.app/skills</loc>
+  </url>
+
+  <url>
+    <loc>https://muhammad-sohail-portfolio-009.netlify.app/projects</loc>
+  </url>
+
+  <url>
+    <loc>https://muhammad-sohail-portfolio-009.netlify.app/experience</loc>
+  </url>
+
+  <url>
+    <loc>https://muhammad-sohail-portfolio-009.netlify.app/resume</loc>
+  </url>
+
+  <url>
+    <loc>https://muhammad-sohail-portfolio-009.netlify.app/contact</loc>
+  </url>
+
 </urlset>
