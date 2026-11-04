@@ -19,7 +19,7 @@ export const profile = {
   timezone: 'Asia/Karachi',
   availability: 'Open to internships & freelance work',
   resumeUrl: '#/resume',
-  photo: './images/profile.jpg',
+  photo: '/images/profile.jpg',
   socials: [
     { name: 'GitHub', url: 'https://github.com/SohailBangash007', icon: 'github' },
     { name: 'Email', url: 'mailto:sohailbangash845@gmail.com', icon: 'mail' },
