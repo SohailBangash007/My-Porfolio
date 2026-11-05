@@ -37,8 +37,9 @@ export default function Footer() {
             </Link>
 
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-muted">
-              Frontend developer and BSCS student from Rawalpindi. I build clean, responsive interfaces with
-              React and Tailwind CSS — and sweat the small details.
+              <span className="font-medium text-ink/90">Muhammad Sohail Portfolio009</span> — frontend
+              developer and BSCS student from Rawalpindi. I build clean, responsive interfaces with React
+              and Tailwind CSS, and sweat the small details.
             </p>
 
             <div className="mt-6 flex items-center gap-2">
@@ -108,7 +109,7 @@ export default function Footer() {
 
         <div className="mt-12 flex flex-col gap-3 border-t border-line/10 pt-6 text-[11px] text-muted sm:flex-row sm:items-center sm:justify-between">
           <p>
-            © {year} {profile.name}. All rights reserved.
+            © {year} {profile.name} · Portfolio009. All rights reserved.
           </p>
           <p className="flex items-center gap-1.5">
             Designed &amp; built with

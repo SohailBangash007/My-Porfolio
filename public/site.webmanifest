@@ -1,0 +1,19 @@
+{
+  "name": "Muhammad Sohail Portfolio009",
+  "short_name": "Sohail009",
+  "description": "Official portfolio of Muhammad Sohail, a Frontend and React Developer from Rawalpindi, Pakistan.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#05060a",
+  "theme_color": "#05060a",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
