@@ -1,5 +1,7 @@
 # Muhammad Sohail — Portfolio
 
+**Live website:** <https://muhammad-sohail-portfolio-009.netlify.app/>
+
 A modern, multi-page personal portfolio built with **React 18**, **Vite**, **Tailwind CSS** and **Framer Motion**.
 Dark/light theme, animated page transitions, a live status side dock and a print-ready resume.
 

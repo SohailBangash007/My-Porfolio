@@ -1,0 +1,33 @@
+name: Submit to IndexNow
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wait for Netlify deploy
+        run: sleep 60
+
+      - name: Submit all portfolio URLs to IndexNow
+        run: |
+          curl -sS -o /dev/null -w "IndexNow HTTP %{http_code}\n" \
+            -X POST "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            --data '{
+              "host": "muhammad-sohail-portfolio-009.netlify.app",
+              "key": "468da82e4cc04287959808b0900ea1f6",
+              "keyLocation": "https://muhammad-sohail-portfolio-009.netlify.app/468da82e4cc04287959808b0900ea1f6.txt",
+              "urlList": [
+                "https://muhammad-sohail-portfolio-009.netlify.app/",
+                "https://muhammad-sohail-portfolio-009.netlify.app/about",
+                "https://muhammad-sohail-portfolio-009.netlify.app/skills",
+                "https://muhammad-sohail-portfolio-009.netlify.app/projects",
+                "https://muhammad-sohail-portfolio-009.netlify.app/experience",
+                "https://muhammad-sohail-portfolio-009.netlify.app/resume",
+                "https://muhammad-sohail-portfolio-009.netlify.app/contact"
+              ]
+            }'
