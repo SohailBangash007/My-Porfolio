@@ -13,6 +13,8 @@ export default function ProjectCard({ project, compact = false }) {
     el.style.setProperty('--my', `${event.clientY - rect.top}px`)
   }
 
+  const href = project.live || project.github
+
   return (
     <article
       ref={ref}
@@ -51,7 +53,7 @@ export default function ProjectCard({ project, compact = false }) {
           )}
         </div>
 
-        <div className="absolute right-4 top-4 flex translate-y-1 items-center gap-2 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+        <div className="absolute right-4 top-4 z-20 flex translate-y-1 items-center gap-2 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
           <a
             href={project.github}
             target="_blank"
@@ -113,6 +115,17 @@ export default function ProjectCard({ project, compact = false }) {
           className="absolute inset-x-6 bottom-0 h-px origin-left scale-x-0 bg-gradient-to-r from-accent to-violet transition-transform duration-500 group-hover:scale-x-100"
         />
       </div>
+
+      {/* whole card opens the live site (or repo) in a new tab */}
+      {href && (
+        <a
+          href={href}
+          target="_blank"
+          rel="noreferrer"
+          aria-label={`Open ${project.title}${project.live ? ' live' : ' on GitHub'}`}
+          className="absolute inset-0 z-10"
+        />
+      )}
     </article>
   )
 }
