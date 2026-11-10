@@ -196,6 +196,36 @@ export const projects = [
     live: null,
     github: 'https://github.com/SohailBangash007/Agentify-ERP',
   },
+  {
+    id: 'tourism',
+    title: 'Dream Travel & Tourism',
+    tagline: 'Destinations, tours and travel packages',
+    category: 'Tourism',
+    year: '2026',
+    featured: false,
+    description:
+      'A multi-page travel website with destination search and filters, tour pages, a gallery lightbox, a travel journal, a 3-step booking flow and a saved-trips wishlist.',
+    image: '/images/projects/tourism.jpg',
+    fallback: ['#0f766e', '#0c4a6e'],
+    tags: ['React', 'React Router', 'Tailwind', 'Vite'],
+    live: null,
+    github: 'https://github.com/SohailBangash007/Tourism',
+  },
+  {
+    id: 'metra-watches',
+    title: 'METRA Fine Timepieces',
+    tagline: 'A premium watch brand storefront',
+    category: 'E-Commerce',
+    year: '2026',
+    featured: false,
+    description:
+      'A watch brand store with a product catalogue, filters, product detail pages, cart, checkout, wishlist and an admin dashboard backed by an Express product API.',
+    image: '/images/projects/watches.jpg',
+    fallback: ['#1c1917', '#78350f'],
+    tags: ['React', 'Vite', 'Tailwind', 'Express'],
+    live: null,
+    github: 'https://github.com/SohailBangash007/Aura-Watches',
+  },
 ]
 
 export const experience = [
