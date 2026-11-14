@@ -42,7 +42,7 @@ const routeMeta = {
   '/projects': {
     title: 'Projects | Muhammad Sohail Portfolio009',
     description:
-      'Real projects by Muhammad Sohail — an e-commerce store, an AI voice agent for restaurants, a hotel booking platform, a cinematic product site and a multi-module ERP.',
+      'Real projects by Muhammad Sohail — a health and wellness store, a YouTube-inspired video platform, an e-commerce store, an AI voice agent, a hotel booking platform, and more.',
   },
   '/experience': {
     title: 'Experience | Muhammad Sohail Portfolio009',

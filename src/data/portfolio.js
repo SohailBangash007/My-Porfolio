@@ -115,6 +115,38 @@ export const techStack = [
 
 export const projects = [
   {
+    id: 'pharma-life',
+    title: 'Pharma Life',
+    tagline: 'Everyday health and wellness essentials',
+    category: 'E-Commerce',
+    year: '2026',
+    featured: true,
+    description:
+      'A responsive health and wellness storefront with product browsing, category filters, search, product detail pages and a shopping cart. Includes dedicated shop, wellness, about and contact pages, plus a theme toggle.',
+    image: '/images/projects/pharma-life.svg',
+    fallback: ['#14532d', '#a16207'],
+    tags: ['React 19', 'Vite', 'Tailwind CSS', 'E-Commerce'],
+    highlights: ['Product search & categories', 'Shopping cart', 'Wellness pages'],
+    live: 'https://pharmalife.netlify.app',
+    github: 'https://github.com/SohailBangash007/Pharma-Life',
+  },
+  {
+    id: 'youtube-clone',
+    title: 'YouTube Clone',
+    tagline: 'A familiar video discovery experience',
+    category: 'Video Platform',
+    year: '2026',
+    featured: true,
+    description:
+      'A responsive video platform interface with video search, category filters, a video player, and interactive liked videos, watch later and subscriptions sections.',
+    image: '/images/projects/youtube-clone.svg',
+    fallback: ['#991b1b', '#1e293b'],
+    tags: ['React', 'Vite', 'Tailwind CSS'],
+    highlights: ['Search & category filters', 'Video player', 'Liked & saved videos'],
+    live: 'https://youtube-clone.netlify.app',
+    github: 'https://github.com/SohailBangash007/You-Tube-clone',
+  },
+  {
     id: 'ecommerce',
     title: 'Aura E-Commerce',
     tagline: 'A full storefront, from catalogue to checkout',

@@ -13,7 +13,7 @@ export default function ProjectCard({ project, compact = false }) {
     el.style.setProperty('--my', `${event.clientY - rect.top}px`)
   }
 
-  const href = project.live || project.github
+  const href = project.live
 
   return (
     <article
@@ -116,7 +116,7 @@ export default function ProjectCard({ project, compact = false }) {
         />
       </div>
 
-      {/* whole card opens the live site (or repo) in a new tab */}
+      {/* Whole card opens the live site; the GitHub icon links to the repository. */}
       {href && (
         <a
           href={href}

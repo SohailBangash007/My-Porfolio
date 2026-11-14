@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" fill="none">
+  <defs>
+    <linearGradient id="thumb1" x1="220" y1="260" x2="460" y2="430" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6041a8"/>
+      <stop offset="1" stop-color="#161b32"/>
+    </linearGradient>
+    <linearGradient id="thumb2" x1="500" y1="260" x2="740" y2="430" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#df7d39"/>
+      <stop offset="1" stop-color="#4f2534"/>
+    </linearGradient>
+    <linearGradient id="thumb3" x1="780" y1="260" x2="1020" y2="430" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#348c8a"/>
+      <stop offset="1" stop-color="#183449"/>
+    </linearGradient>
+  </defs>
+  <path fill="#0f0f0f" d="M0 0h1200v750H0z"/>
+  <path fill="#181818" d="M0 0h1200v83H0z"/>
+  <path fill="#f22" d="M43 26c-8 0-15 6-16 14l-3 20c-1 9 6 16 15 16h31c9 0 16-7 15-16l-3-20c-1-8-8-14-16-14H43Z"/>
+  <path fill="#fff" d="m51 37 18 12-18 12V37Z"/>
+  <text x="94" y="57" fill="#f5f5f5" font-family="Arial,sans-serif" font-size="23" font-weight="700">YouTube</text>
+  <rect x="359" y="22" width="424" height="42" rx="21" fill="#0f0f0f" stroke="#363636"/>
+  <text x="385" y="49" fill="#8b8b8b" font-family="Arial,sans-serif" font-size="14">Search</text>
+  <circle cx="814" cy="43" r="21" fill="#292929"/>
+  <circle cx="814" cy="43" r="8" stroke="#f3f3f3" stroke-width="2"/>
+  <path stroke="#f3f3f3" stroke-linecap="round" stroke-width="2" d="m820 49 6 6"/>
+  <circle cx="1096" cy="43" r="17" fill="#363636"/>
+  <circle cx="1096" cy="38" r="5" fill="#d9d9d9"/>
+  <path fill="#d9d9d9" d="M1087 53c0-5 4-9 9-9s9 4 9 9h-18Z"/>
+  <path fill="#181818" d="M0 83h190v667H0z"/>
+  <g fill="#e8e8e8" font-family="Arial,sans-serif" font-size="13">
+    <rect x="17" y="105" width="156" height="42" rx="9" fill="#303030"/>
+    <path fill="#fff" d="m39 117 13 8-13 8v-16Z"/>
+    <text x="63" y="131">Home</text>
+    <circle cx="44" cy="177" r="9" stroke="#aaa" stroke-width="2"/>
+    <path stroke="#aaa" stroke-linecap="round" stroke-width="2" d="M44 168v9l6 4"/>
+    <text x="63" y="182">Recently uploaded</text>
+    <path stroke="#aaa" stroke-linecap="round" stroke-width="2" d="m35 224 9-12 9 12m-9-12v21"/>
+    <text x="63" y="226">Trending</text>
+    <path stroke="#aaa" stroke-width="2" d="M35 263c0-5 4-9 9-9s9 4 9 9v9H35v-9Zm4 14h10"/>
+    <text x="63" y="273">Subscriptions</text>
+    <path stroke="#aaa" stroke-width="2" d="M35 317h18v13H35z"/>
+    <path stroke="#aaa" stroke-width="2" d="m39 330 5 5 5-5"/>
+    <text x="63" y="328">Watch later</text>
+  </g>
+  <path stroke="#292929" d="M18 367h153"/>
+  <text x="35" y="395" fill="#9d9d9d" font-family="Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1">YOU</text>
+  <g fill="#242424">
+    <rect x="219" y="105" width="80" height="32" rx="16"/>
+    <rect x="307" y="105" width="89" height="32" rx="16"/>
+    <rect x="404" y="105" width="87" height="32" rx="16"/>
+    <rect x="499" y="105" width="76" height="32" rx="16"/>
+    <rect x="583" y="105" width="83" height="32" rx="16"/>
+    <rect x="674" y="105" width="86" height="32" rx="16"/>
+    <rect x="768" y="105" width="90" height="32" rx="16"/>
+    <rect x="866" y="105" width="86" height="32" rx="16"/>
+    <rect x="960" y="105" width="142" height="32" rx="16"/>
+  </g>
+  <g fill="#f5f5f5" font-family="Arial,sans-serif" font-size="12" font-weight="700">
+    <text x="241" y="125">All</text><text x="327" y="125">Music</text><text x="424" y="125">Gaming</text>
+    <text x="520" y="125">Live</text><text x="604" y="125">Mixes</text><text x="695" y="125">News</text>
+    <text x="789" y="125">Design</text><text x="886" y="125">Travel</text><text x="983" y="125">Technology</text>
+  </g>
+  <rect x="219" y="159" width="254" height="160" rx="11" fill="url(#thumb1)"/>
+  <circle cx="346" cy="234" r="45" fill="#b68bff" fill-opacity=".22"/>
+  <path stroke="#d7c1ff" stroke-width="4" d="M319 254c14-35 33-43 57-46m-50 67 34-51m15 50 16-29"/>
+  <rect x="418" y="295" width="42" height="18" rx="4" fill="#080808" fill-opacity=".8"/>
+  <text x="426" y="308" fill="#fff" font-family="Arial,sans-serif" font-size="10">18:24</text>
+  <circle cx="236" cy="346" r="17" fill="#bd85ee"/>
+  <text x="231" y="351" fill="#17121e" font-family="Arial,sans-serif" font-size="12" font-weight="700">C</text>
+  <text x="263" y="342" fill="#f4f4f4" font-family="Arial,sans-serif" font-size="13" font-weight="700">Build a website that</text>
+  <text x="263" y="360" fill="#f4f4f4" font-family="Arial,sans-serif" font-size="13" font-weight="700">feels like home</text>
+  <text x="263" y="384" fill="#aaa" font-family="Arial,sans-serif" font-size="11">The Coding Train</text>
+  <text x="263" y="401" fill="#aaa" font-family="Arial,sans-serif" font-size="11">1.2M views · 2 weeks ago</text>
+  <rect x="499" y="159" width="254" height="160" rx="11" fill="url(#thumb2)"/>
+  <circle cx="625" cy="229" r="54" fill="#ffd58d" fill-opacity=".2"/>
+  <path fill="#ffc47f" d="M602 249c6-29 17-44 32-47 15 13 20 30 17 51-15 9-32 8-49-4Z"/>
+  <path stroke="#ffe0ad" stroke-linecap="round" stroke-width="4" d="M610 247c8-14 16-21 31-31"/>
+  <rect x="698" y="295" width="42" height="18" rx="4" fill="#080808" fill-opacity=".8"/>
+  <text x="706" y="308" fill="#fff" font-family="Arial,sans-serif" font-size="10">24:51</text>
+  <circle cx="516" cy="346" r="17" fill="#f0a267"/>
+  <text x="510" y="351" fill="#3c2016" font-family="Arial,sans-serif" font-size="12" font-weight="700">S</text>
+  <text x="543" y="342" fill="#f4f4f4" font-family="Arial,sans-serif" font-size="13" font-weight="700">A peaceful weekend in</text>
+  <text x="543" y="360" fill="#f4f4f4" font-family="Arial,sans-serif" font-size="13" font-weight="700">the mountains</text>
+  <text x="543" y="384" fill="#aaa" font-family="Arial,sans-serif" font-size="11">Sophie's Journal</text>
+  <text x="543" y="401" fill="#aaa" font-family="Arial,sans-serif" font-size="11">216K views · 4 days ago</text>
+  <rect x="779" y="159" width="254" height="160" rx="11" fill="url(#thumb3)"/>
+  <path fill="#f8cb58" d="M868 274c-18-17-25-38-16-64 8-23 27-35 53-37 14 21 16 43 4 66-10 19-24 31-41 35Z"/>
+  <path stroke="#e9f2d3" stroke-linecap="round" stroke-width="4" d="M880 263c8-30 12-48 24-70"/>
+  <rect x="978" y="295" width="42" height="18" rx="4" fill="#080808" fill-opacity=".8"/>
+  <text x="986" y="308" fill="#fff" font-family="Arial,sans-serif" font-size="10">12:08</text>
+  <circle cx="796" cy="346" r="17" fill="#50b5aa"/>
+  <text x="789" y="351" fill="#102b2b" font-family="Arial,sans-serif" font-size="12" font-weight="700">A</text>
+  <text x="823" y="342" fill="#f4f4f4" font-family="Arial,sans-serif" font-size="13" font-weight="700">How I would learn to</text>
+  <text x="823" y="360" fill="#f4f4f4" font-family="Arial,sans-serif" font-size="13" font-weight="700">code from scratch</text>
+  <text x="823" y="384" fill="#aaa" font-family="Arial,sans-serif" font-size="11">Alex Builds</text>
+  <text x="823" y="401" fill="#aaa" font-family="Arial,sans-serif" font-size="11">842K views · 1 month ago</text>
+  <rect x="219" y="443" width="254" height="150" rx="11" fill="#382a45"/>
+  <circle cx="346" cy="515" r="48" fill="#c178d2" fill-opacity=".33"/>
+  <path fill="#edb8e4" d="M310 532c9-21 18-34 36-38 17 7 28 20 34 39-21 15-46 15-70-1Z"/>
+  <rect x="499" y="443" width="254" height="150" rx="11" fill="#344454"/>
+  <path fill="#8fb9d8" d="m540 555 42-62 36 42 27-31 41 51H540Z"/>
+  <circle cx="664" cy="481" r="16" fill="#e5c27c"/>
+  <rect x="779" y="443" width="254" height="150" rx="11" fill="#543947"/>
+  <circle cx="906" cy="517" r="47" fill="#efb17f" fill-opacity=".7"/>
+  <path fill="#f8d7b2" d="M877 536c13-23 25-35 40-37 16 8 26 21 28 40-21 13-44 12-68-3Z"/>
+  <text x="1092" y="723" fill="#747474" font-family="Arial,sans-serif" font-size="11">VIDEO DISCOVERY</text>
+</svg>

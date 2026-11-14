@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="30" x2="1050" y2="750" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f8f8f1"/>
+      <stop offset="1" stop-color="#e7eee2"/>
+    </linearGradient>
+    <linearGradient id="hero" x1="160" y1="250" x2="1040" y2="550" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#214f40"/>
+      <stop offset="1" stop-color="#102f29"/>
+    </linearGradient>
+    <linearGradient id="bottle" x1="795" y1="325" x2="945" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#e4d7b4"/>
+      <stop offset="1" stop-color="#ad925c"/>
+    </linearGradient>
+    <filter id="shadow" x="735" y="289" width="268" height="267" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="17"/>
+    </filter>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h1200v750H0z"/>
+  <path fill="#fff" d="M0 0h1200v90H0z"/>
+  <path fill="#214f40" d="M58 25h40v40H58z" rx="12"/>
+  <path stroke="#fff" stroke-linecap="round" stroke-width="5" d="M78 34v22m-11-11h22"/>
+  <text x="111" y="52" fill="#173c32" font-family="Arial,sans-serif" font-size="26" font-weight="700">medican.</text>
+  <text x="685" y="51" fill="#718078" font-family="Arial,sans-serif" font-size="14">SHOP</text>
+  <text x="762" y="51" fill="#718078" font-family="Arial,sans-serif" font-size="14">WELLNESS</text>
+  <text x="873" y="51" fill="#718078" font-family="Arial,sans-serif" font-size="14">ABOUT</text>
+  <rect x="1015" y="27" width="130" height="38" rx="19" fill="#214f40"/>
+  <text x="1045" y="51" fill="#fff" font-family="Arial,sans-serif" font-size="13" font-weight="700">YOUR BAG  0</text>
+  <rect x="54" y="125" width="1092" height="408" rx="28" fill="url(#hero)"/>
+  <circle cx="914" cy="326" r="168" fill="#fff" fill-opacity=".06"/>
+  <circle cx="1018" cy="457" r="105" fill="#c6a665" fill-opacity=".14"/>
+  <text x="100" y="199" fill="#d8c18d" font-family="Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="3">CARE, THOUGHTFULLY CHOSEN</text>
+  <text x="100" y="270" fill="#fff" font-family="Georgia,serif" font-size="55">A little better,</text>
+  <text x="100" y="331" fill="#e1d0a6" font-family="Georgia,serif" font-size="55">every day.</text>
+  <text x="102" y="371" fill="#d0dbd1" font-family="Arial,sans-serif" font-size="17">Everyday wellness essentials made simple.</text>
+  <rect x="100" y="409" width="156" height="48" rx="24" fill="#dfc78f"/>
+  <text x="130" y="439" fill="#173c32" font-family="Arial,sans-serif" font-size="15" font-weight="700">EXPLORE SHOP</text>
+  <ellipse cx="872" cy="492" rx="114" ry="27" fill="#071d19" fill-opacity=".43" filter="url(#shadow)"/>
+  <rect x="803" y="306" width="140" height="194" rx="24" fill="url(#bottle)"/>
+  <rect x="827" y="278" width="92" height="44" rx="12" fill="#f3ead4"/>
+  <rect x="823" y="367" width="100" height="87" rx="8" fill="#f8f7ed"/>
+  <path stroke="#66815e" stroke-linecap="round" stroke-width="4" d="M870 388c-13 12-15 25-2 42m4-43c14 8 19 19 14 33m-16-13c-11-2-20 1-27 8"/>
+  <text x="839" y="444" fill="#315444" font-family="Arial,sans-serif" font-size="10" font-weight="700">DAILY CARE</text>
+  <circle cx="747" cy="354" r="27" fill="#e2eadb"/>
+  <path stroke="#66815e" stroke-linecap="round" stroke-width="3" d="M747 342v24m-12-12h24"/>
+  <circle cx="982" cy="403" r="19" fill="#d9c18d"/>
+  <path stroke="#fff" stroke-linecap="round" stroke-width="3" d="M973 403h18m-9-9v18"/>
+  <text x="60" y="591" fill="#173c32" font-family="Georgia,serif" font-size="30" font-weight="700">Small rituals, feel-good essentials</text>
+  <text x="61" y="620" fill="#7d8981" font-family="Arial,sans-serif" font-size="14">Thoughtfully selected for your everyday routine</text>
+  <g>
+    <rect x="60" y="648" width="252" height="70" rx="15" fill="#fff"/>
+    <circle cx="94" cy="683" r="17" fill="#eaf0d9"/>
+    <path stroke="#66815e" stroke-linecap="round" stroke-width="3" d="M94 674v18m-9-9h18"/>
+    <text x="124" y="679" fill="#25483c" font-family="Arial,sans-serif" font-size="14" font-weight="700">Daily wellness</text>
+    <text x="124" y="699" fill="#89958d" font-family="Arial,sans-serif" font-size="12">Made for your routine</text>
+    <rect x="329" y="648" width="252" height="70" rx="15" fill="#fff"/>
+    <circle cx="363" cy="683" r="17" fill="#f4ead5"/>
+    <path stroke="#a8894e" stroke-linecap="round" stroke-width="3" d="M363 674v18m-9-9h18"/>
+    <text x="393" y="679" fill="#25483c" font-family="Arial,sans-serif" font-size="14" font-weight="700">Care essentials</text>
+    <text x="393" y="699" fill="#89958d" font-family="Arial,sans-serif" font-size="12">Simple, thoughtful picks</text>
+    <rect x="598" y="648" width="252" height="70" rx="15" fill="#fff"/>
+    <circle cx="632" cy="683" r="17" fill="#e7e7db"/>
+    <path stroke="#66815e" stroke-linecap="round" stroke-width="3" d="M632 674v18m-9-9h18"/>
+    <text x="662" y="679" fill="#25483c" font-family="Arial,sans-serif" font-size="14" font-weight="700">Feel-good finds</text>
+    <text x="662" y="699" fill="#89958d" font-family="Arial,sans-serif" font-size="12">Explore the collection</text>
+  </g>
+</svg>
