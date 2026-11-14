@@ -127,7 +127,7 @@ export const projects = [
     fallback: ['#14532d', '#a16207'],
     tags: ['React 19', 'Vite', 'Tailwind CSS', 'E-Commerce'],
     highlights: ['Product search & categories', 'Shopping cart', 'Wellness pages'],
-    live: 'https://pharmalife.netlify.app',
+    live: 'https://muhammad-sohail-009-pharma.netlify.app/',
     github: 'https://github.com/SohailBangash007/Pharma-Life',
   },
   {
